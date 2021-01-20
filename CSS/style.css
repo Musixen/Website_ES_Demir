@@ -1,5 +1,5 @@
-@font-face { font-family: AnotherDanger; src: url("AnotherDanger.otf")}
-@font-face { font-family: BloodThirst; src: url("BloodThirst.ttf")}
+@font-face { font-family: AnotherDanger; src: url("../Fonts/AnotherDanger.otf")}
+@font-face { font-family: BloodThirst; src: url("../Fonts/BloodThirst.ttf")}
 
 
 
@@ -64,11 +64,10 @@ sidenav .closbtn {
 #background {
 	background-image: url("https://21ym1q1oz7l4ipi243grtd61-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/pennywise-eyes.jpg");
 	background-repeat: no-repeat;
-	background-position: center; 
-	background-position: fixed;
+	background-position: center;
 	transition: margin-left .5s;
 	position:absolute;
-    top:300;
+    top:600%;
     left:0;
     bottom:0;
     right:0;
@@ -77,35 +76,33 @@ sidenav .closbtn {
 }
 
 #trailer {
-	position: absolute;
 	position: center;
-	margin-left: 475px;
 }
 
 #selected {
 	text-decoration: underline;
-	color: black;
+	color: green;
 }
 
 h1 {
 	font-size: 100px;
 	color: #af111c;
 	text-align: center;
-	font-family: AnotherDanger;
+	font-family: AnotherDanger, serif;
 }
 
 h2{
 	font-size: 75px;
 	color: #af111c;
 	text-align: center;
-	font-family: BloodThirst;
+	font-family: BloodThirst, serif;
 }
 
 h3{
 	font-size: 25px;
 	color: black;
 	text-align: center;
-	font-family: Georgia;
+	font-family: Georgia, serif;
 }
 
 /*for smaller screens */
