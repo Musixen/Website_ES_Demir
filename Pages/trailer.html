@@ -1,44 +1,42 @@
 <!DOCTYPE HTML>
-<html lang = "de">
+<html lang="de">
 <head>
-  <title>IT, Revenge</title>
-  <meta charset = "UTF-8" />
-  <link rel="stylesheet" href="../CSS/style.css">
+    <title>IT, Revenge</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-	<body>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="index.html">Home</a>
-			<a id="selected" href="trailer.html">Trailer</a>
-			<a href="actor.html">Schauspieler</a>
-			<a href="history.html">Geschichte</a>
-			<a href="about.html">About</a>
-		</div>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a id="selected" href="trailer.html">Trailer</a>
+    <a href="actor.html">Schauspieler</a>
+    <a href="history.html">Geschichte</a>
+    <a href="about.html">About</a>
+</div>
 
 
-		
-		<div id="background" >
-			<input type="submit" class="button" value="Menü" onclick="openNav()" />
-			<div id="main" onclick="closeNav()">
-				<div id="trailer" onclick="closeNav()">
-					<h2>Trailer</h2>
-					<iframe width="560" height="315" 
-					src="https://www.youtube.com/embed/4JI70_9acgE" frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-					gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		
-		<script>
-		
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-		}
-		
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-		}
-		</script>
-	</body>
+<div id="background">
+    <input type="submit" class="button" value="Menü" onclick="openNav()"/>
+    <div id="main" onclick="closeNav()">
+        <h2>Trailer</h2>
+        <div class="video-container">
+            <iframe
+                    src="https://www.youtube.com/embed/4JI70_9acgE" frameborder="0" allowfullscreen="allowfullscreen"
+                    allow="autoplay"></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+</body>
 </html>
