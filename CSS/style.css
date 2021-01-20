@@ -1,0 +1,115 @@
+@font-face { font-family: AnotherDanger; src: url("AnotherDanger.otf")}
+@font-face { font-family: BloodThirst; src: url("BloodThirst.ttf")}
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #af111c;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.button {
+	padding: 10px;
+	display: inline;
+	border-radius: 2px;
+	font-family: "Arial";
+	margin: 15px 15px 15px 15px;
+	background-color: #af111c;
+	color: #111111;
+	font-size: 15px;
+	line-height: 15px;
+	color: white;
+	width: auto;
+	height: auto;
+	box-sizing: content-box;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Georgia;
+	color: #111111;
+	display: block;
+	transition: 0.3s;
+}
+
+/* Position and style the close button */
+sidenav .closbtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+/*Change the color of the links when hovering over them */
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+#background {
+	background-image: url("https://21ym1q1oz7l4ipi243grtd61-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/pennywise-eyes.jpg");
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-position: fixed;
+	transition: margin-left .5s;
+	position:absolute;
+    top:300;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+#trailer {
+	position: absolute;
+	position: center;
+	margin-left: 475px;
+}
+
+#selected {
+	text-decoration: underline;
+	color: black;
+}
+
+h1 {
+	font-size: 100px;
+	color: #af111c;
+	text-align: center;
+	font-family: AnotherDanger;
+}
+
+h2{
+	font-size: 75px;
+	color: #af111c;
+	text-align: center;
+	font-family: BloodThirst;
+}
+
+h3{
+	font-size: 25px;
+	color: black;
+	text-align: center;
+	font-family: Georgia;
+}
+
+/*for smaller screens */
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}

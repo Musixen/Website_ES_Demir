@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang = "de">
+<head>
+  <title>IT, Revenge</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="trailer.html">Trailer</a>
+			<a href="actor.html">Schauspieler</a>
+			<a id="selected" href="history.html">Geschichte</a>
+			<a href="about.html">About</a>
+		</div>
+
+
+		
+		<div id="background" >
+			<input type="submit" class="button" value="Menü" onclick="openNav()" />
+			<div id="main" onclick="closeNav()">
+				
+			</div>
+		</div>
+		
+		<script>
+		
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+		
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+	</body>
+</html>
